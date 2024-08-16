@@ -1,6 +1,7 @@
 import Background from "@/components/Background";
 import Banner from "@/components/Banner";
 import Nav from "@/components/Nav";
+import TopNav from "@/components/TopNav";
 import { carouselImg } from "@/utils/img";
 import { randomInt } from "crypto";
 import Image from "next/image";
@@ -9,6 +10,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="page" id="home">
+      <TopNav />
       <Banner />
       {/* 최신 심리테스트 */}
       <div className="slide">
